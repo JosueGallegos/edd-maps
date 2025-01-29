@@ -1,7 +1,5 @@
 package controllers;
 
-import java.util.HashMap;
-
 public class Ejercicios {
 
     /**
@@ -28,22 +26,7 @@ public class Ejercicios {
      * frecuencia.
      */
     public static boolean areAnagrams(String str1, String str2) {
-        //throw new UnsupportedOperationException("Not implemented yet");
-        if (str1.length() !=str2.length()) return false;
-
-        HashMap<Character, Integer> conteocaracteresMap1 = new HashMap<>();
-        HashMap<Character, Integer> conteocaracteresMap2 = new HashMap<>();
-
-        //Barridos de strings y guardar la cantidad de cada caracter
-        // For de str1
-        for(int i = 0; i< str1.length(); i ++){
-            HashMap[str1.charAt(i]
-
-
-
-        }
-        
-
+        throw new UnsupportedOperationException("Not implemented yet");
 
     }
 
