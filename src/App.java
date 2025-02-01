@@ -1,5 +1,8 @@
+import controllers.Ejercicios;
+import static controllers.Ejercicios.areAnagrams;
 import controllers.EmpleadoContoller;
 import controllers.Mapa;
+import java.util.Arrays;
 import models.Empleado;
 
 public class App {
@@ -35,6 +38,7 @@ public class App {
         empleadoContoller.displayLlaves();
         System.out.println();
         empleadoContoller.displayEmpleados();
+        System.out.println();
 
 
         
@@ -51,7 +55,24 @@ public class App {
     }
 
     private static void runEjerccios() {
-        //throw new UnsupportedOperationException("Not implemented yet");
+        
+        
+        System.out.println("Ejercicio 1: ");
+        System.out.println("str1: listen   , str2: silent "+ " = " +areAnagrams("listen", "silent"));
+        System.out.println("str1: hello    , str2: bello "+ " = " + areAnagrams("hello", "bello"));
+        System.out.println("str1: triangle , str2: integral " + " = " + areAnagrams("triangle", "integral"));
+        
+        System.out.println("\nEjercicio 2: ");
+        Ejercicios ejercicios = new Ejercicios();
+        int[] nums1 = {9, 2, 3, 6};
+        System.out.println(Arrays.toString(nums1));
+        int objetivo1 = 5;
+        System.out.println("Indices para suma 5: " + Arrays.toString(ejercicios.sumatoriaDeDos(nums1, objetivo1)));
+
+        int[] nums2 = {9, 2, 3, 6};
+        System.out.println(Arrays.toString(nums2));
+        int objetivo2 = 10;
+        System.out.println("Indices para suma 10: " + Arrays.toString(ejercicios.sumatoriaDeDos(nums2, objetivo2)));
 
     }
 }
